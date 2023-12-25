@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      },
+      "enableLiveMetricsFilters": true
+    }
+  },
+  "extensions": {
+    "serviceBus": {
+      "sessionIdleTimeout": "00:00:01",
+      "maxAutoLockRenewalDuration": "01:05:00"
+    }
+  },
+  "functionTimeout": "01:05:00"
+}
